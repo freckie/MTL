@@ -1,0 +1,18 @@
+'SList by Freckie' Using Guide
+
+SList() : head만 생성됨.
+SList(int _data1) : head 생성 후 첫 번째 요소 생성됨.
+~SList() : 모든 요소 삭제 및 할당 해제. head도 삭제됨.
+
+int length() : list의 길이를 int 타입으로 리턴. (head만 있는 경우 : 0)
+void append(int _data) : list의 맨 뒤에 요소 추가.
+void add(int _index, int _data) : list에서 해당 index에 요소 추가.
+void del(int _index) : list에서 해당 index의 요소를 제거.
+int index(int _data) : data가 일치하는 요소의 index 리턴.
+						중복되는 data가 있을 경우, 낮은 index 리턴.
+						예상치 못한 결과를 가져올 수 있음. 사용 미권장.
+						찾는 data가 없을 경우 INT_MIN 리턴.
+int data(int _index) : 해당 index의 data 리턴.
+bool search(int _data) : data가 list에 존재하는지 검색. 존재 할 경우 true.
+void init() : list 초기화. head를 제외하고 모든 요소 제거.
+...
